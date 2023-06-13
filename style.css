@@ -6,9 +6,6 @@
 body {
     margin: 0px;
     padding: 0px;
-    min-width: 320px;
-    max-width: 1800px;
-
 }
 
 
@@ -58,20 +55,32 @@ body {
 }
 
 /*HOME*/
-
 .main-home {
-    width: 1000px;
-    height: 100vh;
+    width: 80vw;
+    height: 90vh;
     margin-left: 10px;
     margin-bottom: 30px;
-    background-color: rgb(165, 165, 103);
+    background-color: #fff;
     display: flex;
     position: relative;
-    left: 240px;
+    left: 40px;
+    border-radius: 3px 3px;
+    border: solid black;
 }
 
+.main-home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("Logo_Coração_760KB__jpeg_-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1;
+  }
 
-
+.main-container {
+    font-size: 30px;
+}
 
 /*HEADER*/
 header {
@@ -83,13 +92,13 @@ header {
     width: 100%;
     font-family: 'Poppins', sans-serif;
 }
+
 .header a {
     background-color: yellow;
 }
 
 .logo {
     display: flex;
-
     height: 50px;
 }
 
@@ -144,6 +153,13 @@ ul {
 
     .navegacao-mobile {
         display: none !important;
+    }
+
+    .main-home {
+        width: 1000px;
+        height: 80vh;
+        position: relative;
+        left: 260px;
     }
 }
 
@@ -449,12 +465,14 @@ footer img {
     height: 30px;
     width: 30px;
 }
+
 footer > p {
     margin-left: 150px;
     margin-bottom: 100px;
 }
 
 .footer {
+    overflow: hidden;
     background-image: linear-gradient(to bottom, rgb(247, 25, 25), rgba(252, 71, 0, 0.301));
     background-color: yellow;
     width: 100%;
@@ -481,11 +499,8 @@ footer > p {
     text-decoration: none;
 }
 
-
-/*TESTE */
-
-
-.iti {
-    display: block;
+.footer-creditos a:hover {
+    color: yellow;
 }
 
+/*TESTE */
