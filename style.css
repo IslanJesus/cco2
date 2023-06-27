@@ -80,13 +80,13 @@ body {
 }
 
 .main-container {
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     position: relative;
     bottom: px;
-    left: 200px;
+    
     font-family: 'Poppins', sans-serif;
     height: 500px;
 }
@@ -180,10 +180,10 @@ ul {
     }
 
     .main-home {
-        width: 1000px;
+     
         height: 80vh;
         position: relative;
-        left: 260px;
+        left: 40px;
     }
 }
 
@@ -300,6 +300,8 @@ div.terminal {
 
 
 /*ITINERÁRIOS*/
+
+
 
 .main-itinerarios {
     margin: 10px;
@@ -577,7 +579,9 @@ footer>p {
 /*TESTE */
 
 .container-itinerario {
+   
     height: 70vh;
     display: flex;
     justify-content: center;
+    
 }
