@@ -68,19 +68,9 @@ body {
     border: solid black;
 }
 
-.main-home::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("Logo_Coração_760KB__jpeg_-removebg-preview.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.1;
-  }
 
-.main-container {
-    font-size: 30px;
-}
+
+
 
 /*HEADER*/
 header {
@@ -108,8 +98,8 @@ ul {
     margin: 0;
 }
 
-@media (min-width: 991px) {
-    
+@media (min-width: 300px) {
+
     .menu-content {
         max-width: 800px;
         width: 100%;
@@ -123,14 +113,14 @@ ul {
         width: 100%;
         background: #fff;
         box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
-    
+
     }
 
     .header a {
         text-decoration: none;
         background-image: linear-gradient(to bottom, rgb(247, 25, 25), rgba(252, 71, 0, 0.301));
-         
-}
+
+    }
 
 
     .item-menu {
@@ -161,11 +151,119 @@ ul {
         position: relative;
         left: 260px;
     }
+
+    .main-credits::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("Logo_Coração_760KB__jpeg_-removebg-preview.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.1;
+        z-index: 0;
+    }
+    
+    .main-container {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        bottom: px;
+        left: 200px;
+        font-family: 'Poppins', sans-serif;
+        height: 500px;
+    }
+    
+    .main-container a {
+        background-color: rgb(73, 73, 173);
+        text-decoration: none;
+        color: #fff;
+        padding: 3px;
+        border-radius: 6px;
+    }
+    
+    .main-container a:hover {
+        background-color: rgba(112, 240, 240, 0.575);
+        color: rgb(0, 0, 141);
+    }
+
+    
+.icons img {
+    margin-right: 10px;
+}
+
+.icons img:hover {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.icons {
+    display: block;
+    margin-right: 20px;
+    color: black;
+}
+
+.icons a {
+    display: flex;
+    padding: 1vh;
+    color: black;
+}
+
+footer img {
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+footer>p {
+    margin-left: 150px;
+    margin-bottom: 80px;
+}
+
+.footer {
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, rgb(247, 25, 25), rgba(252, 71, 0, 0.301));
+    background-color: yellow;
+    width: 100%;
+    height: 30vh;
+    margin-top: 10px;
+    font-family: 'Pontua One', cursive;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+    flex-direction: row;
+}
+
+.footer-creditos {
+    margin: 20px 23px 80px 15px;
+    font-size: 16px;
+    margin-right: 200px;
+}
+
+.footer-creditos a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-creditos a:hover,
+.icons a:hover {
+    color: #fff;
+}
 }
 
 .navegacao-mobile {
     background-image: linear-gradient(to bottom, rgb(247, 25, 25), rgba(252, 71, 0, 0.301));
-    background-color:  yellow;
+    background-color: yellow;
     padding: 10px;
     display: block;
     width: 53px;
@@ -279,8 +377,10 @@ div.terminal {
 
 .main-itinerarios {
     margin: 10px;
-    width: 80vw;
+    width: 60vw;
     background-image: linear-gradient(to bottom, #f5f5dc, #a5a585);
+    position: relative;
+    left: 18vw;
 }
 
 .itinerarios-listas {
@@ -325,57 +425,14 @@ div.terminal {
     font-size: 18px;
 }
 
-.grupodelinhas {
-    background-color: yellow;
-}
-
-.grupodelinhas2 {
+.att  {
     background-color: aqua;
 }
-
-/*
-#caminhos {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 200px;
-    height: 50px;
-    margin-right: 0;
-    padding-right: 0;
+.main-itinerarios h2 {
+    font-size: medium;
+    font-family: 'Ubuntu', cursive;
+    color: gray;
 }
-*/
-
-
-
-
-/*
-.itinerarios-mapas {
-
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: column;
-    width: 90%;
-    height: 100%;
-
-}*/
-
-/*
-.lista-caminhos ul li iframe {
-    display: flex;
-    vertical-align: top;
-    margin: auto;
-    overflow: auto;
-}*/
-
-
-
-/*
-.caminhos {
-    
-    display: block;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}*/
 
 /*CODIGOS ITINERÁRIOS*/
 
@@ -404,15 +461,82 @@ main .tcr>h1 {
 /*QUEM SOMOS*/
 
 .main-credits {
-    width: auto;
-    height: auto;
+    width: 60vw;
+    height: 70vh;
     margin-left: 10px;
-    background-image: linear-gradient(to bottom, #f5f5dc, #a5a585);
+    background-image: #fff;
+    position: relative;
+    left: 18vw;
+    border: 4px solid black;
+    border-radius: 3px;
+}
 
+.container-credits {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main-credits article {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: '';
+    flex-direction: column;
+    display: flex;
+    border-radius: 2%;
+}
+
+.main-credits article::before {
+    content: "";
+    background-color: yellow;
+    background-image: linear-gradient();
+    inset: 0;
+    opacity: 0.5;
+}
+
+
+.devs-container p {
+    font-family: 'Ubuntu', cursive;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 1vw;
 }
 
 
 
+.devs-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.devs-container h2, h1 {
+    color: rgb(85, 73, 73);
+    padding-left: 1vw;
+}
+
+.a1 {
+    margin-left: 5vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devs-container article {
+    background-color: yellow;
+    background-image: linear-gradient(to bottom, rgb(247, 25, 25), rgba(252, 71, 0, 0.301));
+    width: 20vw;
+}
+
+.linha-vertical {
+    background-color: black;
+    height: 100px;
+    width: 3px;
+    display: block;
+}
 /*FISCAL*/
 
 .fiscal-plan {
@@ -451,64 +575,19 @@ main .tcr>h1 {
 
 
 /*FOOTER (RODAPÉ) */
-
-.icons p {
-    display: flex;
-    font-size: 15px;
-    position: relative;
-}
-
-.icons img {
-    margin-right: 10px;
-}
-
-.icons {
-    display: block;
-    margin-right: 20px;
-    color: #fff;
-}
-
-footer img {
-    display: block;
-    height: 30px;
-    width: 30px;
-}
-
-footer > p {
-    margin-left: 150px;
-    margin-bottom: 100px;
-}
-
 .footer {
-    overflow: hidden;
     background-image: linear-gradient(to bottom, rgb(247, 25, 25), rgba(252, 71, 0, 0.301));
     background-color: yellow;
     width: 100%;
-    height: 30vh;
-    margin-top: 10px;
-    font-family: 'Pontua One', cursive;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-    align-items: center;
+    height: 100%;
 }
 
-.footer-creditos {
-    margin: 20px 23px 80px 15px;
-    font-size: 16px;
-    margin-right: 200px;
-}
 
-.footer-creditos a {
-    color: black;
-    text-decoration: none;
-}
-
-.footer-creditos a:hover {
-    color: yellow;
-}
 
 /*TESTE */
+
+.container-itinerario {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
