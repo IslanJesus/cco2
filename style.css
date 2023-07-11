@@ -357,6 +357,10 @@ div.terminal {
 .att  {
     background-color: #7cd164;
 }
+
+.att2 {
+    background-color: #FF750A;
+}    
 .main-itinerarios h2 {
     font-size: medium;
     font-family: 'Ubuntu', cursive;
