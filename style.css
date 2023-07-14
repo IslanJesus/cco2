@@ -367,11 +367,10 @@ div.terminal {
     color: gray;
 }
 
-.whatsApp {
-    border: 5px;
+.WhatsApp {
     border-radius: 3px;
-    text-decoration: none;
-    color: #13FF94;
+    heigth:30px;
+    width:30px;
 }
 
 /*CODIGOS ITINERÁRIOS*/
