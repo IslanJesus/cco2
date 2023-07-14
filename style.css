@@ -368,10 +368,14 @@ div.terminal {
 }
 
 .WhatsApp {
-    border-radius: 3px;
-    heigth:30px;
-    width:30px;
+    
+    background-color: rgba(107, 228, 26, 0.404);
+    border: 3px solid rgba(40, 233, 15, 0.301);
+    border-radius: 10px;
+    height:50px;
+    width:50px;
 }
+
 
 /*CODIGOS ITINERÁRIOS*/
 
