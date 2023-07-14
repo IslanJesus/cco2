@@ -367,6 +367,12 @@ div.terminal {
     color: gray;
 }
 
+.whatsApp {
+    border-radius: 3px;
+    text-decoration: none;
+    color: White;
+}
+
 /*CODIGOS ITINERÁRIOS*/
 
 .main-codigos {
