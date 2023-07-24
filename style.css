@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,300;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@300;500;600&display=swap');
 
 
 body {
@@ -86,7 +87,7 @@ body {
     flex-direction: column;
     position: relative;
     bottom: px;
-    
+
     font-family: 'Poppins', sans-serif;
     height: 500px;
 }
@@ -167,7 +168,7 @@ ul {
         display: block;
         transition: .4s;
         cursor: pointer;
-        text-align: center
+        text-align: center;
     }
 
     .item-menu .link-menu:hover {
@@ -180,10 +181,111 @@ ul {
     }
 
     .main-home {
-     
-        height: 80vh;
+        padding-bottom: 120px;
+        height: auto;
+        background-image: linear-gradient(to bottom, #f5f5dc, #a5a585);
+        display: flex;
+        margin: auto;
+        border-radius: 0 0 1% 1%;
+        justify-content: center;
+        min-width: 320px;
+        max-width: 1600px;
+        display: block;
+    }
+
+    /* creditos */
+
+    #main-credits {
+        height: 70vh;
+    }
+
+    .linha-vertical {
+        background-color: black;
+        height: 280px;
+        width: 3px;
+        display: block;
         position: relative;
-        left: 40px;
+        left: 30vw;
+        bottom: 9vh;
+
+    }
+
+    #titulo {
+        font-size: 22px ;
+    }
+
+    #devs-container h2,
+    h1 {
+        color: rgb(85, 73, 73);
+        padding-left: 1vw;
+    }
+
+    #a1 {
+        position: relative;
+        left: 2vw;
+        top: 24vh;
+        height: 48vh;
+    }
+
+    #container-credits H1 {
+        position: relative;
+        bottom: 5vh;
+        left: 25vw;
+    }
+
+    #main-credits h2 {
+        position: relative;
+        bottom: 9vh;
+        left: 22vw;
+        width: 60%;
+        text-decoration: none;
+        font-size: 26px;
+    }
+
+    #devs {
+        position: relative;
+        right: 30vw;
+        top: 18vh;
+        font-size: 16px;
+    }
+
+    #dev {
+        position: relative;
+        right: 37vw;
+        top: 25vh;
+        visibility: visible;
+    }
+
+    /* footer */
+
+    .footer-1>p {
+        font-size: 14px;
+        position: relative;
+        left: 7vw;
+    }
+
+    .logos {
+        height: 30px;
+        width: 30px;
+    }
+
+    .footer>span {
+        font-size: 16px;
+    }
+
+    .logorodape {
+        margin-right: 100px;
+    }
+
+    .footer-1>div {
+        position: relative;
+        top: 1vh;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    #iss {
+        visibility: hidden;
     }
 }
 
@@ -237,6 +339,7 @@ ul {
 .input-menu-all:checked~.list-menu .link-menu {
     text-align: left;
 }
+
 
 /*HORÁRIOS */
 .main-horarios {
@@ -304,11 +407,11 @@ div.terminal {
 
 
 .main-itinerarios {
-    margin: 10px;
-    width: 60vw;
+    margin: 20px;
+    width: auto;
     background-image: linear-gradient(to bottom, #f5f5dc, #a5a585);
     position: relative;
-    left: 18vw;
+
 }
 
 .itinerarios-listas {
@@ -354,13 +457,14 @@ div.terminal {
 }
 
 
-.att  {
+.att {
     background-color: #7cd164;
 }
 
 .att2 {
     background-color: #FF750A;
-}    
+}
+
 .main-itinerarios h2 {
     font-size: medium;
     font-family: 'Ubuntu', cursive;
@@ -368,12 +472,12 @@ div.terminal {
 }
 
 .WhatsApp {
-    
+
     background-color: rgba(107, 228, 26, 0.404);
     border: 3px solid rgba(40, 233, 15, 0.301);
     border-radius: 10px;
-    height:50px;
-    width:50px;
+    height: 50px;
+    width: 50px;
 }
 
 
@@ -412,15 +516,18 @@ main .tcr>h1 {
     left: 18vw;
     border: 4px solid black;
     border-radius: 3px;
+    padding: 0px;
 }
 
 .container-credits {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-self: center;
     align-items: center;
+    height: 17vh;
+    width: 10vw;
+    margin: 0px;
+    padding: 0px;
 }
-
 
 .main-credits article {
     font-size: 20px;
@@ -441,7 +548,7 @@ main .tcr>h1 {
 }
 
 
-.devs-container p {
+.container-credits p {
     font-family: 'Ubuntu', cursive;
     color: black;
     font-size: 25px;
@@ -449,37 +556,84 @@ main .tcr>h1 {
     padding-left: 1vw;
 }
 
-
+.devs-container img {
+    height: 180px;
+    width: 180px;
+}
 
 .devs-container {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
 }
 
-.devs-container h2, h1 {
+.devs-container h2,
+h1 {
     color: rgb(85, 73, 73);
     padding-left: 1vw;
-}
-
-.a1 {
-    margin-left: 5vw;
-    display: flex;
-    justify-content: space-around;
 }
 
 .devs-container article {
     background-color: yellow;
     background-image: linear-gradient(to bottom, rgb(247, 25, 25), rgba(252, 71, 0, 0.301));
-    width: 20vw;
+    width: 40vw;
+    height: 400px;
+    opacity: 0.5;
+    margin: 0px;
+    position: relative;
+    top: 26vh;
+    right: 19vw;
+
 }
 
-.linha-vertical {
-    background-color: black;
-    height: 100px;
-    width: 3px;
-    display: block;
+.main-credits {
+    overflow: hidden;
+    height: 90vh;
 }
+
+.main-credits>article {
+    width: 70vw;
+}
+
+.dev {
+    position: relative;
+    right: 52vw;
+    font-size: 5px;
+    top: 30vh;
+}
+
+.devs {
+    position: relative;
+    right: 78vw;
+    font-size: 8px;
+    top: 60vh;
+}
+
+.container-credits h1 {
+    position: relative;
+    left: 18vw;
+    bottom: 3vh;
+}
+
+.devs-container > article {
+    height: 70vh;
+    width: 44vw;
+    position: relative;
+    top: 36vh;
+    right: 15vw;
+}
+
+.main-credits h2 {
+    position: relative;
+    bottom: 6vh;
+    left: 12vw;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.titulo {
+    font-size: 15px;
+}
+
 /*FISCAL*/
 
 .fiscal-plan {
@@ -530,7 +684,7 @@ main .tcr>h1 {
 
 .icons {
     display: block;
-    margin-right: 20px;
+    margin-right: 10px;
     color: black;
 }
 
@@ -538,17 +692,18 @@ main .tcr>h1 {
     display: flex;
     padding: 1vh;
     color: black;
+    font-weight: bold;
 }
 
 footer img {
     display: block;
-    height: 30px;
-    width: 30px;
+    height: 16px;
+    width: 16px;
 }
 
 footer>p {
-    margin-left: 150px;
-    margin-bottom: 80px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .footer {
@@ -556,7 +711,7 @@ footer>p {
     background-image: linear-gradient(to bottom, rgb(247, 25, 25), rgba(252, 71, 0, 0.301));
     background-color: yellow;
     width: 100%;
-    height: 30vh;
+    height: 24vh;
     margin-top: 10px;
     font-family: 'Pontua One', cursive;
     font-weight: bold;
@@ -564,8 +719,30 @@ footer>p {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    font-size: 15px;
-    align-items: center;
+    font-size: 10px;
+    align-items: left;
+}
+
+.footer-1 {
+    overflow: hidden;
+    width: 100%;
+    height: 25vh;
+    margin-top: 10px;
+    font-family: 'Taviraj', serif;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    align-items: left;
+}
+
+footer>span {
+    display: flex;
+    justify-content: center;
+    font-family: 'Taviraj', serif;
+    color: #c00;
 }
 
 .footer a {
@@ -575,14 +752,10 @@ footer>p {
 }
 
 .footer-creditos {
-    margin: 20px 23px 80px 15px;
-    font-size: 16px;
-    margin-right: 200px;
-}
-
-.footer-creditos a {
-    color: black;
-    text-decoration: none;
+    margin: 10px;
+    font-size: 10px;
+    height: 20px;
+    margin-bottom: 20px;
 }
 
 .footer-creditos a:hover,
@@ -590,12 +763,28 @@ footer>p {
     color: #fff;
 }
 
+.logorodape {
+    width: 100px;
+    height: 100px;
+    position: relative;
+
+}
+
+.set {
+    margin: 10px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+}
+
 /*TESTE */
 
 .container-itinerario {
-   
+
     height: 70vh;
     display: flex;
     justify-content: center;
-    
+
 }
