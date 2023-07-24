@@ -205,13 +205,13 @@ ul {
         width: 3px;
         display: block;
         position: relative;
-        left: 32vw;
+        left: 34vw;
         bottom: 9vh;
 
     }
 
     #titulo {
-        font-size: 22px ;
+        font-size: 22px;
     }
 
     #devs-container h2,
@@ -226,17 +226,20 @@ ul {
         top: 24vh;
         height: 48vh;
     }
+    #devs-container > article {
+        width: 50vw;
+    }
 
     #container-credits H1 {
         position: relative;
         bottom: 5vh;
-        left: 25vw;
+        left: 29vw;
     }
 
     #main-credits h2 {
         position: relative;
         bottom: 9vh;
-        left: 22vw;
+        left: 25vw;
         width: 60%;
         text-decoration: none;
         font-size: 26px;
@@ -244,14 +247,14 @@ ul {
 
     #devs {
         position: relative;
-        right: 27vw;
-        top: 18vh;
+        right: 30vw;
+        top: 137px;
         font-size: 16px;
     }
 
     #dev {
         position: relative;
-        right: 37vw;
+        right: 42vw;
         top: 25vh;
         visibility: visible;
     }
@@ -625,7 +628,7 @@ h1 {
 .main-credits h2 {
     position: relative;
     bottom: 6vh;
-    left: 12vw;
+    left: 11vw;
     font-size: 18px;
     text-decoration: underline;
 }
@@ -753,9 +756,11 @@ footer>span {
 
 .footer-creditos {
     margin: 10px;
-    font-size: 10px;
+    font-size: 8px;
     height: 20px;
     margin-bottom: 20px;
+    position: relative;
+    left: 3vw;
 }
 
 .footer-creditos a:hover,
@@ -771,7 +776,8 @@ footer>span {
 }
 
 .set {
-    margin: 10px;
+    position: relative;
+    bottom: 5px; 
 }
 
 #footer {
